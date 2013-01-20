@@ -27,8 +27,8 @@ get '/' do
   erb :index
 end
 
-get '/avatar.png' do
-  message = params[:t]
+get '/:size/:id.png' do
+  message = params[:id] || "??"
 
   result = 0
   message.each_char { |c| result += c.ord }
@@ -36,7 +36,7 @@ get '/avatar.png' do
   colors = COLORS[result]
 
   content_type 'image/png'
-  size = params[:s].to_i || 48
+  size = (params[:size] || "200").to_i
   file = Magick::Image.new(size, size) do
     self.background_color = colors[0]
   end
@@ -50,8 +50,6 @@ get '/avatar.png' do
     iteration += 1
     text = get_text(point_size)
   end
-
-  puts "  Iteration: #{iteration} Size: #{point_size} Width: #{text.get_type_metrics(file, message).width}"
 
   text.annotate(file, 0, 0, 0, 0, message) do
     self.fill = colors[1]
