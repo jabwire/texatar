@@ -2,7 +2,7 @@
 
 A server that generates images with text to replace default gravatar image.
 
-The problem we face is not everyone has a gravatar image linkes to their email address.  When we show images in place of names, they all look the same and there is no way to differentiate between people.  Texatar will generate an image based on text for the user.  The color scheme is equally important and is based on a hash of the user's email.
+The problem we face is not everyone has a gravatar image linked to their email address.  When we show images in place of names, they all look the same and there is no way to differentiate between people.  Texatar will generate an image based on text for the user.  The color scheme is equally important and is based on a hash of the user's email.
 
 ## Usage
 
