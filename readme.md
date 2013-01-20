@@ -6,19 +6,23 @@ The problem we face is not everyone has a gravatar image linkes to their email a
 
 ## Usage
 
-Images are generate from http://texatar.jabwire.com/avatar.png
+Images are generate from http://texatar.jabwire.com/:size/:text.png
 
 The following parameters used to control the generated image:
 
-* t = the text to display in the texatar, required
-* s = the size of the image in pixels, default 48
+* :text = the text to display in the texatar, required
+* :size = the size of the image in pixels, default 48
+
+For example, the link, http://texatar.jabwire.com/200/ds.png, would create a 200 x 200 image with the text ds in the center.
+
+![Texatar](http://texatar.jabwire.com/200/ds.png)
 
 ## Gravatar Integration
 
 Gravatar allows developers to supply their own default image with the d= or default= parameter.  Be sure to URL encode the parameter's value.
 
 ```
-<img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=http%3A%2F%2Ftexatar.jabwire.com%2Favatar.png%3Fs%3D48%26t%3Dds"
+<img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=http%3A%2F%2Ftexatar.jabwire.com%2F200%f2ds.png">
 ```
 
 See https://en.gravatar.com/site/implement/images/#default-image for more information.
