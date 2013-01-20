@@ -1,6 +1,6 @@
-require 'bundler'
-Bundler.require
-require 'pp'
+require 'rubygems'
+require 'sinatra'
+require 'RMagick'
 
 get '/' do
   erb :index
