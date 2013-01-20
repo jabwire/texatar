@@ -27,7 +27,7 @@ get '/' do
   erb :index
 end
 
-get '/image.png' do
+get '/avatar.png' do
   message = params[:t]
 
   result = 0
