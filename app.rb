@@ -31,6 +31,7 @@ end
 get '/:size/:id.png' do
   message = params[:id]
   size    = params[:size].to_i
+  size = 2048 if size > 2048
   colors  = COLORS[calculate_hash(message, COLORS.length)]
   file    = Magick::Image.new(size, size) { self.background_color = colors[0] }
 
