@@ -6,23 +6,23 @@ The problem we face is not everyone has a gravatar image linked to their email a
 
 ## Usage
 
-Images are generate from http://texatar.jabwire.com/:size/:text.png
+Images are generate from https://texatar.jabwire.com/:size/:text.png
 
 The following parameters used to control the generated image:
 
 * :text = the text to display in the texatar
 * :size = the size of the image in pixels
 
-For example, the link, http://texatar.jabwire.com/200/ds.png, would create a 200 x 200 image with the text ds in the center.
+For example, the link, https://texatar.jabwire.com/200/ds.png, would create a 200 x 200 image with the text ds in the center.
 
-![Texatar](http://texatar.jabwire.com/200/ds.png)
+![Texatar](https://texatar.jabwire.com/200/ds.png)
 
 ## Gravatar Integration
 
 Gravatar allows developers to supply their own default image with the d= or default= parameter.  Be sure to URL encode the parameter's value.
 
 ```
-<img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=http%3A%2F%2Ftexatar.jabwire.com%2F200%f2ds.png">
+<img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=https%3A%2F%2Ftexatar.jabwire.com%2F200%f2ds.png">
 ```
 
 See https://en.gravatar.com/site/implement/images/#default-image for more information.
@@ -35,7 +35,7 @@ You can find me on Twitter: @dshimy or via gmail.
 
 MIT License
 
-Copyright (c) 2013 Darian Shimy
+Copyright (c) 2013-2016 Darian Shimy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
