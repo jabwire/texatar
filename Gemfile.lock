@@ -1,21 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    daemons (1.2.2)
-    eventmachine (1.0.7)
-    rack (1.6.4)
-    rack-protection (1.5.3)
+    daemons (1.2.6)
+    eventmachine (1.2.5)
+    mustermann (1.0.2)
+    rack (2.0.4)
+    rack-protection (2.0.1)
       rack
-    rmagick (2.15.2)
-    sinatra (1.4.6)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
-    thin (1.6.3)
+    rmagick (2.16.0)
+    sinatra (2.0.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.1)
+      tilt (~> 2.0)
+    thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0)
-      rack (~> 1.0)
-    tilt (2.0.1)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    tilt (2.0.8)
 
 PLATFORMS
   ruby
@@ -24,3 +26,6 @@ DEPENDENCIES
   rmagick
   sinatra
   thin
+
+BUNDLED WITH
+   1.16.0
